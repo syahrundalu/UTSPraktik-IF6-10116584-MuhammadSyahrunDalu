@@ -1,0 +1,1008 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white_bg"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/jarak_20dp"
+                android:layout_marginTop="@dimen/jarak_20dp"
+                android:layout_marginEnd="@dimen/jarak_20dp"
+                android:layout_marginBottom="@dimen/jarak_20dp"
+                android:paddingBottom="@dimen/jarak_20dp"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="@dimen/jarak_20dp"
+                    app:cardCornerRadius="@dimen/jarak_10dp"
+                    app:cardUseCompatPadding="true">
+
+                    <ImageView
+                        android:id="@+id/banner"
+                        android:layout_width="match_parent"
+                        android:layout_height="500px"
+                        android:layout_alignParentTop="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/banner" />
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/jarak_10dp"
+                    android:background="@drawable/white_corner"
+                    android:elevation="@dimen/jarak_10dp"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="@dimen/jarak_10dp"
+                    android:paddingVertical="@dimen/jarak_20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/jarak_8dp"
+                            android:fontFamily="@font/bold"
+                            android:text="@string/pelaksanaan"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size_14sp" />
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:src="@drawable/detailcard" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <View
+                            android:id="@+id/line_101"
+                            android:layout_width="0dp"
+                            android:layout_height="5dp"
+                            android:layout_weight="0.8"
+                            android:background="@drawable/line_1" />
+
+                        <View
+                            android:id="@+id/line_102"
+                            android:layout_width="0dp"
+                            android:layout_height="5dp"
+                            android:layout_weight="0.2"
+                            android:background="@drawable/line_2" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/jarak_20dp"
+                        android:layout_marginBottom="@dimen/jarak_20dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/jarak_10dp"
+                            android:src="@drawable/icon" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/bold"
+                                android:text="Persiapan"
+                                android:textColor="@color/black" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="17 Mei - 05 Juni 2023"
+                                android:textColor="@color/black" />
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="-100dp"
+                            android:src="@drawable/Icon2" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/jarak_10dp"
+                    android:background="@drawable/white_corner"
+                    android:elevation="@dimen/jarak_10dp"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="@dimen/jarak_10dp"
+                    android:paddingVertical="@dimen/jarak_20dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/jarak_10dp"
+                        android:src="@drawable/notif" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bold"
+                        android:text="Pengumuman Hasil Seleksi"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_14sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/jarak_8dp"
+                        android:background="@drawable/pink_corner"
+                        android:orientation="vertical"
+                        android:paddingHorizontal="@dimen/jarak_10dp"
+                        android:paddingVertical="@dimen/jarak_10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/regular"
+                                android:text="@string/pemberitahuan"
+                                android:textColor="@color/red"
+                                android:textSize="@dimen/text_size_12sp" />
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="right"
+                                android:paddingLeft="50dp"
+                                android:src="@drawable/detail_green" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/jarak_8dp"
+                            android:fontFamily="@font/semibold"
+                            android:text="@string/sekolah"
+                            android:textColor="@color/black"
+
+                            android:textSize="@dimen/text_size_14sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/regular"
+                            android:text="@string/jalur"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size_12sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/jarak_10dp"
+                    android:background="@drawable/white_corner"
+                    android:elevation="@dimen/jarak_10dp"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="@dimen/jarak_10dp"
+                    android:paddingVertical="@dimen/jarak_20dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/jarak_10dp"
+                        android:src="@drawable/layanan" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/bold"
+                        android:text="Layanan PPDB"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_14sp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/marker" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/jarak_10dp"
+                            android:fontFamily="@font/bold"
+                            android:text="Kota Bandung"
+                            android:textColor="@color/green_det"
+                            android:textSize="@dimen/text_size_10sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/jarak_8dp"
+                        android:orientation="horizontal"
+                        android:paddingHorizontal="@dimen/jarak_10dp"
+                        android:paddingVertical="@dimen/jarak_10dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/info_sekolah" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/jarak_20dp"
+                            android:fontFamily="@font/bold"
+                            android:gravity="center_vertical"
+                            android:text="@string/info_sekolah"
+                            android:textColor="@color/black" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="120dp"
+                            android:src="@drawable/arrow" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="4dp"
+                        android:background="@drawable/line_2" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/jarak_8dp"
+                        android:orientation="horizontal"
+                        android:paddingHorizontal="@dimen/jarak_10dp"
+                        android:paddingVertical="@dimen/jarak_10dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/sosialisasi_ppdb" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/jarak_20dp"
+                            android:fontFamily="@font/bold"
+                            android:gravity="center_vertical"
+                            android:text="@string/sosialisasi_ppdb"
+                            android:textColor="@color/black" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="135dp"
+                            android:src="@drawable/arrow" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="4dp"
+                        android:background="@drawable/line_2" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/jarak_8dp"
+                        android:orientation="horizontal"
+                        android:paddingHorizontal="@dimen/jarak_10dp"
+                        android:paddingVertical="@dimen/jarak_10dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/pendaftaran" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/jarak_20dp"
+                            android:fontFamily="@font/bold"
+                            android:gravity="center_vertical"
+                            android:text="@string/pendaftaran"
+                            android:textColor="@color/black" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="60dp"
+                            android:src="@drawable/arrow" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="4dp"
+                        android:background="@drawable/line_2" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/jarak_8dp"
+                        android:orientation="horizontal"
+                        android:paddingHorizontal="@dimen/jarak_10dp"
+                        android:paddingVertical="@dimen/jarak_10dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/pengumuman" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/jarak_20dp"
+                            android:fontFamily="@font/bold"
+                            android:gravity="center_vertical"
+                            android:text="@string/pengumuman"
+                            android:textColor="@color/black" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="45dp"
+                            android:src="@drawable/arrow" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="4dp"
+                        android:background="@drawable/line_2" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/jarak_8dp"
+                        android:orientation="horizontal"
+                        android:paddingHorizontal="@dimen/jarak_10dp"
+                        android:paddingVertical="@dimen/jarak_10dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/hotline" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/jarak_20dp"
+                            android:fontFamily="@font/bold"
+                            android:gravity="center_vertical"
+                            android:text="@string/hotline"
+                            android:textColor="@color/black" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="200dp"
+                            android:src="@drawable/arrow" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:background="@drawable/line_2" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/jarak_10dp"
+                    android:background="@drawable/white_corner"
+                    android:elevation="@dimen/jarak_10dp"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="@dimen/jarak_10dp"
+                    android:paddingVertical="@dimen/jarak_20dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/jarak_10dp"
+                        android:src="@drawable/notif" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/semibold"
+                        android:text="@string/berita"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_16sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/jarak_10dp"
+                        android:fontFamily="@font/regular"
+                        android:text="@string/berita_det"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_size_12sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/jarak_8dp"
+                        android:background="@drawable/gray_rounded"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingHorizontal="@dimen/jarak_10dp"
+                        android:paddingVertical="@dimen/jarak_8dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/white_corner"
+
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingHorizontal="40dp"
+                                android:paddingVertical="@dimen/jarak_10dp"
+                                android:text="Terbaru"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_size_14sp" />
+
+                            <View
+                                android:layout_width="20px"
+                                android:layout_height="20px"
+                                android:layout_marginRight="@dimen/jarak_20dp"
+                                android:background="@drawable/circle_red" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/jarak_20dp"
+                            android:paddingHorizontal="40dp"
+                            android:paddingVertical="@dimen/jarak_10dp"
+                            android:text="Terpopuler"
+                            android:textColor="@color/secondary_text"
+                            android:textSize="@dimen/text_size_14sp" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/jarak_8dp"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal"
+                        android:paddingHorizontal="@dimen/jarak_10dp"
+                        android:paddingVertical="@dimen/jarak_10dp">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:cardCornerRadius="@dimen/jarak_10dp">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/article" />
+                        </androidx.cardview.widget.CardView>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="210dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="@dimen/jarak_20dp"
+                                android:ellipsize="end"
+                                android:fontFamily="@font/bold"
+                                android:gravity="center_vertical"
+                                android:maxLines="2"
+                                android:text="@string/tittle_1"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_size_14sp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/jarak_20dp"
+                                android:layout_marginTop="2dp"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="@dimen/jarak_20dp"
+                                    android:fontFamily="@font/regular"
+                                    android:gravity="center_vertical"
+                                    android:text="Pendidikan"
+                                    android:textColor="@color/secondary_text"
+                                    android:textSize="@dimen/text_size_12sp" />
+
+                                <View
+                                    android:layout_width="15px"
+                                    android:layout_height="15px"
+                                    android:layout_marginHorizontal="@dimen/jarak_10dp"
+                                    android:background="@drawable/circle_gray" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:fontFamily="@font/regular"
+                                    android:gravity="center_vertical"
+                                    android:text="Terbaru 4 Jam"
+                                    android:textColor="@color/secondary_text"
+                                    android:textSize="@dimen/text_size_12sp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:layout_marginLeft="@dimen/jarak_18dp"
+                            android:src="@drawable/arrow" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="4dp"
+                        android:background="@drawable/line_2" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/jarak_8dp"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal"
+                        android:paddingHorizontal="@dimen/jarak_10dp"
+                        android:paddingVertical="@dimen/jarak_10dp">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:cardCornerRadius="@dimen/jarak_10dp">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/article" />
+                        </androidx.cardview.widget.CardView>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="210dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="@dimen/jarak_20dp"
+                                android:ellipsize="end"
+                                android:fontFamily="@font/bold"
+                                android:gravity="center_vertical"
+                                android:maxLines="2"
+                                android:text="@string/tittle_2"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_size_14sp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/jarak_20dp"
+                                android:layout_marginTop="2dp"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="@dimen/jarak_20dp"
+                                    android:fontFamily="@font/regular"
+                                    android:gravity="center_vertical"
+                                    android:text="Pendidikan"
+                                    android:textColor="@color/secondary_text"
+                                    android:textSize="@dimen/text_size_12sp" />
+
+                                <View
+                                    android:layout_width="15px"
+                                    android:layout_height="15px"
+                                    android:layout_marginHorizontal="@dimen/jarak_10dp"
+                                    android:background="@drawable/circle_gray" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:fontFamily="@font/regular"
+                                    android:gravity="center_vertical"
+                                    android:text="4 Juni 2022"
+                                    android:textColor="@color/secondary_text"
+                                    android:textSize="@dimen/text_size_12sp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:layout_marginLeft="@dimen/jarak_18dp"
+                            android:src="@drawable/arrow" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="4dp"
+                        android:background="@drawable/line_2" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/jarak_8dp"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal"
+                        android:paddingHorizontal="@dimen/jarak_10dp"
+                        android:paddingVertical="@dimen/jarak_10dp">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:cardCornerRadius="@dimen/jarak_10dp">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/article" />
+                        </androidx.cardview.widget.CardView>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="210dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="@dimen/jarak_20dp"
+                                android:ellipsize="end"
+                                android:fontFamily="@font/bold"
+                                android:gravity="center_vertical"
+                                android:maxLines="2"
+                                android:text="@string/tittle_3"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_size_14sp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/jarak_20dp"
+                                android:layout_marginTop="2dp"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="@dimen/jarak_20dp"
+                                    android:fontFamily="@font/regular"
+                                    android:gravity="center_vertical"
+                                    android:text="Pendidikan"
+                                    android:textColor="@color/secondary_text"
+                                    android:textSize="@dimen/text_size_12sp" />
+
+                                <View
+                                    android:layout_width="15px"
+                                    android:layout_height="15px"
+                                    android:layout_marginHorizontal="@dimen/jarak_10dp"
+                                    android:background="@drawable/circle_gray" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:fontFamily="@font/regular"
+                                    android:gravity="center_vertical"
+                                    android:text="24 Mei 2022"
+                                    android:textColor="@color/secondary_text"
+                                    android:textSize="@dimen/text_size_12sp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:layout_marginLeft="@dimen/jarak_18dp"
+                            android:src="@drawable/arrow" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="4dp"
+                        android:background="@drawable/line_2" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/jarak_8dp"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal"
+                        android:paddingHorizontal="@dimen/jarak_10dp"
+                        android:paddingVertical="@dimen/jarak_10dp">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:cardCornerRadius="@dimen/jarak_10dp">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/article" />
+                        </androidx.cardview.widget.CardView>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="210dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="@dimen/jarak_20dp"
+                                android:ellipsize="end"
+                                android:fontFamily="@font/bold"
+                                android:gravity="center_vertical"
+                                android:maxLines="2"
+                                android:text="@string/tittle_4"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_size_14sp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/jarak_20dp"
+                                android:layout_marginTop="2dp"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="@dimen/jarak_20dp"
+                                    android:fontFamily="@font/regular"
+                                    android:gravity="center_vertical"
+                                    android:text="Pendidikan"
+                                    android:textColor="@color/secondary_text"
+                                    android:textSize="@dimen/text_size_12sp" />
+
+                                <View
+                                    android:layout_width="15px"
+                                    android:layout_height="15px"
+                                    android:layout_marginHorizontal="@dimen/jarak_10dp"
+                                    android:background="@drawable/circle_gray" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:fontFamily="@font/regular"
+                                    android:gravity="center_vertical"
+                                    android:text="24 Mei 2022"
+                                    android:textColor="@color/secondary_text"
+                                    android:textSize="@dimen/text_size_12sp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:layout_marginLeft="@dimen/jarak_18dp"
+                            android:src="@drawable/arrow" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="4dp"
+                        android:background="@drawable/line_2" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/jarak_8dp"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal"
+                        android:paddingHorizontal="@dimen/jarak_10dp"
+                        android:paddingVertical="@dimen/jarak_10dp">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:cardCornerRadius="@dimen/jarak_10dp">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/article" />
+                        </androidx.cardview.widget.CardView>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="210dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="@dimen/jarak_20dp"
+                                android:ellipsize="end"
+                                android:fontFamily="@font/bold"
+                                android:gravity="center_vertical"
+                                android:maxLines="2"
+                                android:text="@string/tittle_5"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_size_14sp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/jarak_20dp"
+                                android:layout_marginTop="2dp"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="@dimen/jarak_20dp"
+                                    android:fontFamily="@font/regular"
+                                    android:gravity="center_vertical"
+                                    android:text="Pendidikan"
+                                    android:textColor="@color/secondary_text"
+                                    android:textSize="@dimen/text_size_12sp" />
+
+                                <View
+                                    android:layout_width="15px"
+                                    android:layout_height="15px"
+                                    android:layout_marginHorizontal="@dimen/jarak_10dp"
+                                    android:background="@drawable/circle_gray" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:fontFamily="@font/regular"
+                                    android:gravity="center_vertical"
+                                    android:text="19 Juli 2022"
+                                    android:textColor="@color/secondary_text"
+                                    android:textSize="@dimen/text_size_12sp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="right"
+                            android:layout_marginLeft="@dimen/jarak_18dp"
+                            android:src="@drawable/arrow" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="4dp"
+                        android:background="@drawable/line_2" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/jarak_10dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/jarak_12dp"
+                            android:layout_weight="0.8"
+                            android:fontFamily="@font/bold"
+                            android:gravity="center_vertical"
+                            android:text="Lihat semua berita"
+                            android:textColor="@color/green_det"
+                            android:textSize="@dimen/text_size_12sp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="left"
+                            android:layout_marginRight="15dp"
+                            android:src="@drawable/arrow" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/jarak_10dp"
+                    android:background="@drawable/white_corner"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="20dp"
+                    android:paddingVertical="@dimen/jarak_10dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/backtotop" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/jarak_12dp"
+                        android:layout_weight="0.8"
+                        android:fontFamily="@font/bold"
+                        android:gravity="center_vertical"
+                        android:text="Kembali Ke atas"
+                        android:textColor="@color/green_det"
+                        android:textSize="@dimen/text_size_12sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

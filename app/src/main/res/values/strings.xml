@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">UTSPraktik-IF6-10116584-Muhammad Syahrun Dalu</string>
+
+    <string name="name">Muhammad Syahrun Dalu</string>
+    <string name="nim">10116584</string>
+    <string name="pelaksanaan">Pelaksanaan PPDB Tahap 1 - 2023</string>
+
+
+    <string name="pemberitahuan">Anda dinyatakan tidak diterima di</string>
+    <string name="sekolah">SMA Negeri 1 Bojonggede</string>
+    <string name="jalur">Jalur Prestasi Kejuaraan</string>
+
+    <string name="info_sekolah">Info Sekolah PPDB</string>
+    <string name="sosialisasi_ppdb">Sosialisasi PPDB</string>
+    <string name="pendaftaran">Pendaftaran PPDB Tahap 1</string>
+    <string name="pengumuman">Pengumuman PPDB Tahap 1</string>
+    <string name="hotline">Hotline</string>
+
+
+    <string name="berita">Berita Terkait PPDB</string>
+    <string name="berita_det">Dapatkan semua informasi terbaru dan terpopuler terkait PPDB</string>
+
+    <string name="tittle_1">PPDB SMA/ SMK 2022, Ridwan Kamil: PPDB di Jawa Barat Semakin Adil dan Andal</string>
+    <string name="tittle_2">Persiapan PPDB Jabar Tahun 2021 Sudah Matang</string>
+    <string name="tittle_3">Pelaksana Teknis PPDB Harus Evaluasi Diri</string>
+    <string name="tittle_4">Masih ditemukan 'Blank Spot' dalam Proses PPDB Kabupaten Cianjur</string>
+    <string name="tittle_5">Bupati Purwakarta Hadiri Pembukaan Masa Pengenalan Lingkungan Sekolah</string>
+
+
+</resources>
