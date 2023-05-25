@@ -242,6 +242,7 @@
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/jarak_8dp"
                         android:orientation="horizontal">
 
                         <ImageView
@@ -253,7 +254,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="@dimen/jarak_10dp"
-                            android:fontFamily="@font/bold"
+                            android:fontFamily="@font/regular"
                             android:text="Kota Bandung"
                             android:textColor="@color/green_det"
                             android:textSize="@dimen/text_size_10sp" />
